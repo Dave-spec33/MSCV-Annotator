@@ -1,0 +1,39 @@
+# Local datasets and all generated dataset artifacts
+/cv_datasets/
+/dataset/
+/portable_dataset/
+/portable_dataset.zip
+
+# Server-side working copy and training artifacts
+/cv_annotator/
+/output/
+/checkpoints/
+/runs/
+/wandb/
+
+# Model weights and archives
+*.bin
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.tar
+*.tar.gz
+*.zip
+
+# Local tools and bootstrap binaries
+/tools/
+/7z*.exe
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+
+# Codex workspace metadata
+/.agents/
+/.codex/
