@@ -6,8 +6,10 @@
 
 # Server-side working copy and training artifacts
 /cv_annotator/
+/models/
 /output/
 /checkpoints/
+/logs/
 /runs/
 /wandb/
 
@@ -25,12 +27,28 @@
 /tools/
 /7z*.exe
 
-# Python and editor artifacts
+# Python environments, caches, and build artifacts
 __pycache__/
 *.py[cod]
+.Python
+.env
+.env.*
+!.env.example
+.venv/
+env/
+venv/
+build/
+dist/
+*.egg-info/
+.coverage
+.coverage.*
+htmlcov/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.ipynb_checkpoints/
+
+# Editor artifacts
 .idea/
 .vscode/
 
