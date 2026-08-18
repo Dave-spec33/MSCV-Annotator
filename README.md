@@ -8,7 +8,7 @@ target descriptions, scene context, and tracking or motion cues.
 This repository publishes dataset construction and validation code, plus the
 Qwen3-VL-8B QLoRA training command used on a single RTX 4090. It does **not**
 redistribute source datasets, generated JSONL files, target crops, sampled
-frames, portable dataset bundles, model checkpoints, or training outputs.
+frames, or portable dataset bundles.
 
 ## Dataset composition
 
@@ -105,6 +105,14 @@ bash scripts/train_qwen3vl8b_qlora_4090.sh
 The dataset and training script use ground-truth boxes only to construct target
 templates for selected first-frame inputs. Coordinates, masks, and track IDs are
 not exposed in the user prompt or expected model response.
+
+## Released weights
+
+The released training weights are hosted externally and are not stored in this
+Git repository:
+
+- [Download from Baidu Netdisk](https://pan.baidu.com/s/1MWE8Tmw1PhZX9S65qvm0Uw?pwd=uqvs)
+- Extraction code: `uqvs`
 
 ## Data and licensing
 
