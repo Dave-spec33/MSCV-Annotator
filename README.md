@@ -8,8 +8,8 @@ target descriptions, scene context, and tracking or motion cues.
 This repository publishes dataset construction and validation code, the
 Qwen3-VL-8B QLoRA training command used on a single RTX 4090, and reproducible
 comparison and text-quality evaluation scripts. It does **not** redistribute
-source datasets, generated JSONL files, target crops, sampled frames, portable
-dataset bundles, model checkpoints, or training outputs.
+source datasets, generated JSONL files, target crops, sampled frames, or
+portable dataset bundles.
 
 ## Dataset composition
 
