@@ -12,6 +12,8 @@
 /logs/
 /runs/
 /wandb/
+/eval/outputs/
+/eval/results/
 
 # Model weights and archives
 *.bin

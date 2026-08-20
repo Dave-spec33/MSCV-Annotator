@@ -5,10 +5,11 @@ LoRA/QLoRA fine-tuning of Qwen-VL models. The model learns to produce concise,
 natural-language semantic guidance for visual targets and scenes, including
 target descriptions, scene context, and tracking or motion cues.
 
-This repository publishes dataset construction and validation code, plus the
-Qwen3-VL-8B QLoRA training command used on a single RTX 4090. It does **not**
-redistribute source datasets, generated JSONL files, target crops, sampled
-frames, portable dataset bundles, model checkpoints, or training outputs.
+This repository publishes dataset construction and validation code, the
+Qwen3-VL-8B QLoRA training command used on a single RTX 4090, and reproducible
+comparison and text-quality evaluation scripts. It does **not** redistribute
+source datasets, generated JSONL files, target crops, sampled frames, portable
+dataset bundles, model checkpoints, or training outputs.
 
 ## Dataset composition
 
@@ -113,6 +114,19 @@ Git repository:
 
 - [Download from Baidu Netdisk](https://pan.baidu.com/s/1MWE8Tmw1PhZX9S65qvm0Uw?pwd=uqvs)
 - Extraction code: `uqvs`
+
+## Evaluation
+
+All models were evaluated on the same 1,488-sample validation split.
+
+| Model | BERTScore-P | BERTScore-R | BERTScore-F1 | Format success |
+| --- | ---: | ---: | ---: | ---: |
+| Qwen3-VL-Plus | 0.9700 | 0.9779 | 0.9740 | 0.9892 (1472/1488) |
+| Qwen3-VL-8B-Instruct | 0.9660 | 0.9779 | 0.9719 | 0.9940 (1479/1488) |
+| Qwen3-VL-8B-Instruct + QLoRA | **0.9857** | **0.9842** | **0.9850** | **0.9993 (1487/1488)** |
+
+See [eval/README.md](eval/README.md) for inference commands, API setup, metric
+definitions, evaluation commands, and interpretation limits.
 
 ## Data and licensing
 
